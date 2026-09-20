@@ -1,5 +1,5 @@
 export const PHOTO_COUNT = 4;
-const base = '/assets/frames/';
+const base = `${import.meta.env.BASE_URL}assets/frames/`;
 const makeFrame = (id, name, file, slots, canvas = { width: 880, height: 2650 }) => ({
   id, name, src: `${base}${file}`, thumbnail: `${base}${file}`, canvas, slots
 });
